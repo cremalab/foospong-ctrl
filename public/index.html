@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>Paddle Controller</title>
+</head>
+
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="root">
+    <div id="outerPlayer">
+      <label>Player #
+      </label>
+      <select id="playerId">
+        <option value="">...</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+    </div>
+    <button id="btnUp" class="btn">
+      <svg width="458" viewBox="0 0 458 288" preserveAspectRation height="288" xmlns="http://www.w3.org/2000/svg">
+        <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+        <g>
+          <title>background</title>
+          <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+            <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%" />
+          </g>
+        </g>
+        <g>
+          <title>Layer 1</title>
+          <path id="svg_1" d="m5.09749,222.26064l223.5,-218.00001l223.5,218.00001l-447.00001,0z" stroke-width="0" stroke="#000" fill="#306856"
+          />
+          <ellipse ry="27.5" rx="27.5" id="svg_2" cy="258" cx="227.5" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#306856"
+          />
+        </g>
+      </svg>
+    </button>
+    <button id="btnDown" class="btn">
+      <svg width="458" viewBox="0 0 458 288" preserveAspectRation height="288" xmlns="http://www.w3.org/2000/svg">
+        <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+        <g>
+          <title>background</title>
+          <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+            <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%" />
+          </g>
+        </g>
+        <g>
+          <title>Layer 1</title>
+          <g stroke="null" id="svg_5">
+            <path stroke="#000" id="svg_1" d="m448.53033,67.20775l-220.97856,215.0529l-220.97856,-215.0529l441.95711,0z" stroke-width="0"
+              fill="#306856" />
+            <ellipse stroke="#000" ry="27.12823" rx="27.18975" id="svg_2" cy="30.96506" cx="228.63689" stroke-opacity="null" stroke-width="0"
+              fill="#306856" />
+          </g>
+        </g>
+      </svg>
+    </button>
+  </div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+</body>
+
+</html>
