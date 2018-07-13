@@ -1,7 +1,7 @@
 import './global.css';
 import Nes from 'nes';
 
-const wsClient = new Nes.Client('ws://b30cf627.ngrok.io');
+const wsClient = new Nes.Client('ws://10.100.52.166:8000');
 const globs = {
   id: 0,
   isConnected: false,

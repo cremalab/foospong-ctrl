@@ -27,6 +27,7 @@ select {
   font-size: 25px;
 }
 .btn {
+  user-select: none;
   width: 90vw;
   height: 30vh;
   background-color: cornflowerblue;
