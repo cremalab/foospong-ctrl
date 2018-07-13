@@ -6,9 +6,16 @@ const globs = {
   id: 0,
   isConnected: false,
 };
+console.log(process.env);
 
 const startSocket = async () => {
-  await wsClient.connect();
+  await wsClient.connect({
+    auth: {
+      headers: {
+        authorization: 'o389f293898ef9283e',
+      }
+    }
+  });
   globs.isConnected = true;
   wsClient.onDisconnect = () => {
     console.log('socket disconnected');
